@@ -18,7 +18,7 @@ body {
 }
 
 header {
-  background-color: #1038e9;
+  background-color: black;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -191,4 +191,31 @@ header {
 }
 .img_menu:hover{
     color: #333333;
+}
+.footer{
+  color-scheme: light dark;
+  position-anchor: relative;
+  margin: 0%;
+  padding: 0%;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #333;
+  
+  text-transform: uppercase;
+  text-decoration:solid;
+  
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+
 }
