@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title  > Jea Store</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+    
+  </head>
+  
+
+  <body>
+    <header>
+      <h1> <img src="/assets/facebook-logo-24.png" class="img_menu"> Jea Store</h1>
+    </header>
+      
+    <div class="container">
+      <div class="menu">
+        <h1>CAMISAS OVERSIZE</h1>
+      </div>
+     
+      <section class="menu">
+        <!-- Producto 1 -->
+        <div class="producto" data-nombre="monastery" data-precio="160.00">
+          <img src="/assets/monastery1.jpeg" alt="monastery" />
+          <h3>Monastery</h3>
+          <p>$160.00</p>
+          <button class="add-to-cart">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="producto" data-nombre="Clemont" data-precio="150.00">
+          <img src="/assets/Clemont1.jpeg" alt="clemont" />
+          <h3>Clemont</h3>
+          <p>$150.00</p>
+          <button class="add-to-cart">Añadir al carrito</button>
+        </div>
+
+        <div class="producto" data-nombre="Clemont" data-precio="150.00">
+          <img src="/assets/clemont2.jpeg" alt="clemont" />
+          <h3>Clemont</h3>
+          <p>$150.00</p>
+          <button class="add-to-cart">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto" data-nombre="clemont" data-precio="150.00">
+          <img src="/assets/clemont3.jpeg" alt="clemont" />
+          <h3>Clemont</h3>
+          <p>$150.00</p>
+          <button class="add-to-cart">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="producto" data-nombre="clemont" data-precio="150.00">
+          <img src="/assets/clemont4.jpeg" alt="clemont" />
+          <h3>Clemont</h3>
+          <p>$150.00</p>
+          <button class="add-to-cart">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="producto" data-nombre="clemont" data-precio="150.00">
+          <img src="/assets/clemont5.jpeg" alt="clemont" />
+          <h3>Clemont</h3>
+          <p>$150.00</p>
+          <button class="add-to-cart">Añadir al carrito</button>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="producto" data-nombre="clemont" data-precio="150.00">
+          <img src="/assets/clemont6.jpeg" alt="clemont" />
+          <h3>Clemont</h3>
+          <p>$150.00</p>
+          <button class="add-to-cart">Añadir al carrito</button>
+        </div>
+         <div class="producto" data-nombre="clemont" data-precio="150.00">
+      <img src="/assets/clemont7.jpeg" alt="clemont"/>
+      <h3>Clemont  </h3>
+      <p>150.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    </div>
+      
+    
+    <!-- Producto 6 -->
+    <div class="producto" data-nombre="clemont" data-precio="150.00">
+      <img src="/assets/clemont8.jpeg" alt="clemont" />
+      <h3>Clemont</h3>
+      <p>$150.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    
+    </div>
+
+    <div class="producto" data-nombre="clemont" data-precio="150.00">
+      <img src="/assets/clemont9.jpeg" alt="clemont" />
+      <h3>Clemont</h3>
+      <p>$150.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    
+    </div>
+
+    <div class="producto" data-nombre="Hugo boss" data-precio="200.00">
+      <img src="/assets/hugoboss1.jpeg" alt="Hugo boss" />
+      <h3>Hugo Boss</h3>
+      <p>$200.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    
+    </div>
+
+    <div class="producto" data-nombre="monastery" data-precio="170.00">
+      <img src="/assets/monastery1.jpeg" alt="monastery" />
+      <h3>Monastery</h3>
+      <p>$170.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    
+    </div>
+
+    <div class="producto" data-nombre="monastery" data-precio="170.00">
+      <img src="/assets/monastery2.jpeg" alt="monastery" />
+      <h3>Monastery</h3>
+      <p>$170.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    
+    </div>
+
+    <div class="producto" data-nombre="monastery" data-precio="170.00">
+      <img src="/assets/monastery3.jpeg" alt="monastery" />
+      <h3>Monastery</h3>
+      <p>$170.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    
+    </div>
+
+    <div class="producto" data-nombre="y/out" data-precio="180.00">
+      <img src="/assets/y/out1.jpeg" alt="y/put" />
+      <h3>Y/out</h3>
+      <p>$180.00</p>
+      <button class="add-to-cart">Añadir al carrito</button>
+    
+    </div>
+
+
+   
+</section>
+
+    <div class="carrito">
+      <h3 class="heading_carrito">
+        Carrito <img src="/assets/cart-add-regular-24.png" alt="tarjeta autorizada" />
+      </h3>
+      <ul id="carrito-list">
+        <!-- Los productos añadidos aparecerán aquí -->
+      </ul>
+      <div class="total">
+        <p>Total: $<span id="total">0.00</span></p>
+      </div>
+      <button class="checkout" onclick="realizarPago() "
+    >Realizar Pago <img src="/assets/mastercard-logo-24.png" />
+      </button>
+     
+    </div>
+    <section>
+        <h3>ESTAMOS UBICADOS EN MEDELLIN <img src="/assets/map-solid-24.png" alt="ubicacion" >
+        </h3>
+        <ul><strong>
+            <li>DOMICILIOS CONTRA ENTREGA EN EL <br> AREA METROPOLITANA</li>
+            <li>ENVIOS NACIONALES</li>
+            <li>ENVIOS INTERNACIONALES</li>
+          </strong>
+        </ul>
+    </section>
+
+    <section>
+      <h3>  PAGA CON TU BANCO FAVORITO  <img src="/assets/bank-solid-24.png" alt="" >
+      </h3>
+      <ul><strong>
+          <li> BANCOLOMBIA</li>
+          <li>BANCO DE BOGOTA</li>
+          <li>BANCO DE OCCIDENTE</li>
+          <li>NEQUI</li>
+          <li>BANCO DE LA MUJER</li>
+          <li>CRIPTO MONEDA</li>
+          <li>BITCOIN</li>
+          <H4>PAGA EN EFECTIVO </H4>
+        </strong>
+      </ul>
+  </section>
+    
+
+
+  </body>
+  <script src="/js/camisas.js"></script>
+
+</html>
