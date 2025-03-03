@@ -99,10 +99,6 @@ window.addEventListener("load", () => {
 // Agregar un evento al botón para cambiar de tema
 botonTema.addEventListener("click", cambiarTema);
 
-// ** NUEVO CÓDIGO: Funcionalidad de Búsqueda por Marca **
-
-// Lista de productos de ejemplo (puedes ajustar esto según cómo estés manejando los productos en tu página)
-
 // Función para mostrar los productos en la página
 function mostrarProductos(productosParaMostrar) {
   const productosContainer = document.getElementById("productos");
