@@ -3,193 +3,195 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css">
-    <title  > Jea Store</title>
+    <link rel="stylesheet" href="/css/PruebaStyle.css" />
+    <title>Jea Store</title>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-   
-    
   </head>
-  
 
   <body>
-    <header>
-      <h1> <img src="/assets/facebook-logo-24.png" class="img_menu"> Jea Store</h1>
-    </header>
-      
-    <div class="container">
-      <div class="menu">
-        <h1>CAMISAS OVERSIZE</h1>
+    <!-- Barra de navegación -->
+    <header class="header">
+      <div class="navbar">
+        <div class="logo-container">
+          <img src="/assets/facebook-logo-24.png" alt="Logo" class="logo" />
+
+          <h1>Jea Store</h1>
+        </div>
+        <!-- Botón para cambiar el tema -->
+        <button id="theme-toggle" class="boton-tema">CAMBIAR TEMA</button>
+        <!-- Input de búsqueda de marcas -->
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-brand"
+            class="search-input"
+            placeholder="Buscar por marca..."
+          />
+          <button type="submit" class="boton-buscar">BUSCAR</button>
+        </div>
+
+        <!-- Lista de productos -->
+        <div class="productos" id="productos">
+          <!-- Aquí se mostrarán los productos de las marcas filtradas -->
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contáctanos</a></li>
+          </ul>
+        </nav>
+        <div class="cart-icon-container">
+          <img
+            src="/assets/cart-add-regular-24.png"
+            alt="Carrito"
+            onclick="toggleCarrito()"
+            class="cart-icon"
+          />
+        </div>
       </div>
-     
-      <section class="menu">
-        <!-- Producto 1 -->
-        <div class="producto" data-nombre="monastery" data-precio="160.00">
-          <img src="/assets/monastery1.jpeg" alt="monastery" />
-          <h3>Monastery</h3>
-          <p>$160.00</p>
-          <button class="add-to-cart">Añadir al carrito</button>
-        </div>
+    </header>
 
-        <!-- Producto 2 -->
-        <div class="producto" data-nombre="Clemont" data-precio="150.00">
-          <img src="/assets/Clemont1.jpeg" alt="clemont" />
-          <h3>Clemont</h3>
-          <p>$150.00</p>
-          <button class="add-to-cart">Añadir al carrito</button>
-        </div>
+    <!-- Banner o imagen destacada -->
+    <section class="hero-section">
+      <img
+        src="/assets/banner.avif"
+        alt="Banner de productos"
+        class="hero-image"
+      />
+      <div class="hero-text">
+        <h2>¡Descubre la mejor moda de la temporada!</h2>
+        <p>Compra tus prendas favoritas hoy mismo.</p>
+      </div>
+    </section>
 
-        <div class="producto" data-nombre="Clemont" data-precio="150.00">
-          <img src="/assets/clemont2.jpeg" alt="clemont" />
-          <h3>Clemont</h3>
-          <p>$150.00</p>
-          <button class="add-to-cart">Añadir al carrito</button>
-        </div>
+    <!-- Sección de productos -->
+    <section class="productos">
+      <div class="producto" data-nombre="Monastery" data-precio="160.00">
+        <img src="/assets/monastery1.jpeg" alt="Monastery" />
+        <h3>Monastery</h3>
+        <p>$160.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
 
-        <!-- Producto 3 -->
-        <div class="producto" data-nombre="clemont" data-precio="150.00">
-          <img src="/assets/clemont3.jpeg" alt="clemont" />
-          <h3>Clemont</h3>
-          <p>$150.00</p>
-          <button class="add-to-cart">Añadir al carrito</button>
-        </div>
+      <div class="producto" data-nombre="Clemont" data-precio="150.00">
+        <img src="/assets/clemont1.jpeg" alt="Clemont" />
+        <h3>Clemont</h3>
+        <p>$150.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
 
-        <!-- Producto 4 -->
-        <div class="producto" data-nombre="clemont" data-precio="150.00">
-          <img src="/assets/clemont4.jpeg" alt="clemont" />
-          <h3>Clemont</h3>
-          <p>$150.00</p>
-          <button class="add-to-cart">Añadir al carrito</button>
-        </div>
+      <div class="producto" data-nombre="Clemont" data-precio="150.00">
+        <img src="/assets/clemont2.jpeg" alt="Clemont" />
+        <h3>Clemont</h3>
+        <p>$150.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="Clemont" data-precio="150.00">
+        <img src="/assets/clemont3.jpeg" alt="Clemont" />
+        <h3>Clemont</h3>
+        <p>$150.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="Clemont" data-precio="150.00">
+        <img src="/assets/clemont4.jpeg" alt="Clemont" />
+        <h3>Clemont</h3>
+        <p>$150.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="Clemont" data-precio="150.00">
+        <img src="/assets/clemont5.jpeg" alt="Clemont" />
+        <h3>Clemont</h3>
+        <p>$150.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="Clemont" data-precio="150.00">
+        <img src="/assets/clemont6.jpeg" alt="Clemont" />
+        <h3>Clemont</h3>
+        <p>$150.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="Clemont" data-precio="150.00">
+        <img src="/assets/clemont7.jpeg" alt="Clemont" />
+        <h3>Clemont</h3>
+        <p>$150.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="Clemont" data-precio="150.00">
+        <img src="/assets/clemont8.jpeg" alt="Clemont" />
+        <h3>Clemont</h3>
+        <p>$150.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="Clemont" data-precio="150.00">
+        <img src="/assets/clemont9.jpeg" alt="Clemont" />
+        <h3>Clemont</h3>
+        <p>$150.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="HUgo Boss" data-precio="180.00">
+        <img src="/assets/hugoboss1.jpeg" alt="HugoBoss" />
+        <h3>HugoBoss</h3>
+        <p>$180.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="monastery" data-precio="170.00">
+        <img src="/assets/monastery2.jpeg" alt="monastery" />
+        <h3>Monastery</h3>
+        <p>$170.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="monastery" data-precio="170.00">
+        <img src="/assets/monastery3.jpeg" alt="monastery" />
+        <h3>Monastery</h3>
+        <p>$170.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="Adidas" data-precio="170.00">
+        <img src="/assets/adidas1.jpeg" alt="adidas" />
+        <h3>Adidas</h3>
+        <p>$170.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
+      <div class="producto" data-nombre="y/out" data-precio="200.00">
+        <img src="/assets/y/out1.jpeg" alt="y/out" />
+        <h3>Y/OUT</h3>
+        <p>$200.00</p>
+        <button class="add-to-cart">Añadir al carrito</button>
+      </div>
 
-        <!-- Producto 5 -->
-        <div class="producto" data-nombre="clemont" data-precio="150.00">
-          <img src="/assets/clemont5.jpeg" alt="clemont" />
-          <h3>Clemont</h3>
-          <p>$150.00</p>
-          <button class="add-to-cart">Añadir al carrito</button>
-        </div>
+      <!-- Agrega más productos aquí -->
+    </section>
 
-        <!-- Producto 6 -->
-        <div class="producto" data-nombre="clemont" data-precio="150.00">
-          <img src="/assets/clemont6.jpeg" alt="clemont" />
-          <h3>Clemont</h3>
-          <p>$150.00</p>
-          <button class="add-to-cart">Añadir al carrito</button>
-        </div>
-         <div class="producto" data-nombre="clemont" data-precio="150.00">
-      <img src="/assets/clemont7.jpeg" alt="clemont"/>
-      <h3>Clemont  </h3>
-      <p>150.00</p>
-      <button class="add-to-cart">Añadir al carrito</button>
-    </div>
-      
-    
-    <!-- Producto 6 -->
-    <div class="producto" data-nombre="clemont" data-precio="150.00">
-      <img src="/assets/clemont8.jpeg" alt="clemont" />
-      <h3>Clemont</h3>
-      <p>$150.00</p>
-      <button class="add-to-cart">Añadir al carrito</button>
-    
-    </div>
-
-    <div class="producto" data-nombre="clemont" data-precio="150.00">
-      <img src="/assets/clemont9.jpeg" alt="clemont" />
-      <h3>Clemont</h3>
-      <p>$150.00</p>
-      <button class="add-to-cart">Añadir al carrito</button>
-    
-    </div>
-
-    <div class="producto" data-nombre="Hugo boss" data-precio="200.00">
-      <img src="/assets/hugoboss1.jpeg" alt="Hugo boss" />
-      <h3>Hugo Boss</h3>
-      <p>$200.00</p>
-      <button class="add-to-cart">Añadir al carrito</button>
-    
-    </div>
-
-    <div class="producto" data-nombre="monastery" data-precio="170.00">
-      <img src="/assets/monastery1.jpeg" alt="monastery" />
-      <h3>Monastery</h3>
-      <p>$170.00</p>
-      <button class="add-to-cart">Añadir al carrito</button>
-    
-    </div>
-
-    <div class="producto" data-nombre="monastery" data-precio="170.00">
-      <img src="/assets/monastery2.jpeg" alt="monastery" />
-      <h3>Monastery</h3>
-      <p>$170.00</p>
-      <button class="add-to-cart">Añadir al carrito</button>
-    
-    </div>
-
-    <div class="producto" data-nombre="monastery" data-precio="170.00">
-      <img src="/assets/monastery3.jpeg" alt="monastery" />
-      <h3>Monastery</h3>
-      <p>$170.00</p>
-      <button class="add-to-cart">Añadir al carrito</button>
-    
-    </div>
-
-    <div class="producto" data-nombre="y/out" data-precio="180.00">
-      <img src="/assets/y/out1.jpeg" alt="y/put" />
-      <h3>Y/out</h3>
-      <p>$180.00</p>
-      <button class="add-to-cart">Añadir al carrito</button>
-    
-    </div>
-
-
-   
-</section>
-
-    <div class="carrito">
-      <h3 class="heading_carrito">
-        Carrito <img src="/assets/cart-add-regular-24.png" alt="tarjeta autorizada" />
+    <!-- Carrito desplegable -->
+    <div class="carrito" id="carrito" style="display: none">
+      <h3>
+        Carrito <img src="/assets/cart-add-regular-24.png" alt="carrito" />
       </h3>
+
       <ul id="carrito-list">
-        <!-- Los productos añadidos aparecerán aquí -->
+        <!-- Aquí se añadirán los productos -->
       </ul>
+
       <div class="total">
         <p>Total: $<span id="total">0.00</span></p>
       </div>
-      <button class="checkout" onclick="realizarPago() "
-    >Realizar Pago <img src="/assets/mastercard-logo-24.png" />
-      </button>
-     
+
+      <!-- Botón para proceder al pago -->
+      <button class="checkout" onclick="realizarPago()">Realizar Pago</button>
     </div>
-    <section class="footer">
-        <h3>ESTAMOS UBICADOS EN MEDELLIN <img src="/assets/map-solid-24.png" alt="ubicacion" >
-        </h3>
-        <ul><strong>
-            <li>DOMICILIOS CONTRA ENTREGA EN EL <br> AREA METROPOLITANA</li>
-            <li>ENVIOS NACIONALES</li>
-            <li>ENVIOS INTERNACIONALES</li>
-          </strong>
-        </ul>
-    </section>
 
-    <section class="footer">
-      <h3>  PAGA CON TU BANCO FAVORITO  <img src="/assets/bank-solid-24.png" alt="" >
-      </h3>
-      <ul><strong>
-          <li> BANCOLOMBIA</li>
-          <li>BANCO DE BOGOTA</li>
-          <li>BANCO DE OCCIDENTE</li>
-          <li>NEQUI</li>
-          <li>BANCO DE LA MUJER</li>
-          <li>CRIPTO MONEDA</li>
-          <li>BITCOIN</li>
-          <H4>PAGA EN EFECTIVO </H4>
-        </strong>
-      </ul>
-  </section>
-    
-
-
+    <footer></footer>
+    <script src="/js/camisas.js"></script>
+    <script src="/js/theme-toggle.js"></script>
+    <!-- Script para manejar el cambio de tema -->
+    <footer class="footer">
+      <h4>ESTAMOS UBICADOS EN MEDELLIN</h4>
+      <h4>CONTACTANOS: 1234567</h4>
+      <p>CONTRA ENTREGA EN MEDELLIN</p>
+      <p>ENVIOS NACIONALES E INTERNACIONALES</p>
+    </footer>
   </body>
-  <script src="/js/camisas.js"></script>
-
 </html>
